@@ -50,3 +50,5 @@ end
 gem 'shrine'
 gem "aws-sdk-s3", '~> 1.2'
 gem 'dotenv-rails'
+gem 'ruby-shout'
+gem 'sidekiq'

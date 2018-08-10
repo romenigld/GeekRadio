@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180807205201) do
+ActiveRecord::Schema.define(version: 20180810160154) do
 
   create_table "songs", force: :cascade do |t|
     t.string "title"
@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 20180807205201) do
     t.text "track_data"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "current", default: false
+    t.index ["current"], name: "index_songs_on_current"
   end
 
 end
